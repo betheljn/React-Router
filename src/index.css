@@ -1,0 +1,93 @@
+* {
+  font-family: arial, sans-serif;
+  margin: 0;
+  padding: 0; /* Add padding reset */
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Set container height to 100% of viewport height */
+}
+
+#navbar {
+  padding: 2em;
+  justify-content: space-evenly;
+  background-color: cadetblue;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+}
+#navbar a:hover {
+  color: gold;
+}
+#main-section {
+  flex: 1; /* Allow main-section to grow and take up remaining space */
+}
+
+#main-section > div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; /* Ensure div takes up full height of main-section */
+}
+
+.red, .blue, .green, .yellow, .home {
+  color: black; /* Ensure text color is black for better contrast */
+}
+.blue {
+  background-color: blue;
+}
+.red {
+  background-color: red;
+}
+.green {
+  background-color: green;
+}
+.yellow {
+  background-color: yellow;
+}
+.home {
+  background-color: cadetblue;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: cadetblue;
+  padding: 10px; /* Add padding for better visual appearance */
+}
+
+.footer nav {
+  display: flex;
+  justify-content: center;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.footer li {
+  margin: 0 15px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Optional: Add a hover effect for better user interaction */
+.footer a:hover {
+  color: gold;
+}
+
+#root {
+  margin: 0;
+  padding: 0%;
+}
+
